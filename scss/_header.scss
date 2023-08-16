@@ -1,0 +1,46 @@
+// header
+
+@mixin anclas {
+    text-decoration: none;
+    color: $color-fuentes;
+    font-size: 1.5rem;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 100px;
+}
+
+.tituloPrincipal {
+    @include anclas;
+
+    i{
+        font-size: 4rem;
+        color: $color-botones;
+    }
+    h1 {
+        display: inline-block;
+        color: $color-fuentes;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+ul {
+    display: flex;
+    list-style: none;
+
+    li {
+        margin-right: 1rem;
+
+        a {
+            @include anclas;
+            &:hover{
+                color: $color-botones-secundarios;
+            }
+        }
+    }
+}

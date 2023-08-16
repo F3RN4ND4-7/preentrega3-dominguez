@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200;10..48,400;10..48,600;10..48,800&family=Open+Sans:wght@400;700&display=swap");
+body {
+  background-color: #1c003f;
+  color: #ffffff;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  height: 100px;
+}
+
+.tituloPrincipal {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.tituloPrincipal i {
+  font-size: 4rem;
+  color: #b20068;
+}
+.tituloPrincipal h1 {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  margin-right: 1rem;
+}
+ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+ul li a:hover {
+  color: #770045;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: inline-block;
+  position: relative;
+}
+.hero h2 {
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.hero h2 span {
+  font-weight: 700;
+  position: relative;
+  padding: 0 5px;
+}
+.hero p {
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-size: 0.8rem;
+}
+.hero a {
+  background-color: #b20068;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  font-weight: 700;
+}
+.hero a:hover {
+  background-color: #770045;
+}
+
+.introServicios {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border: 3px solid #770045;
+}
+.introServicios h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.imagenServicio {
+  border-radius: 10px;
+  padding: 4px;
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(50%);
+}
+.imagenServicio:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 767px) {
+  .imagenServicio {
+    max-width: 90%;
+    margin: auto;
+  }
+  .tituloPrincipal i {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

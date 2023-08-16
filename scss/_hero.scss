@@ -1,0 +1,36 @@
+
+// HERO
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: inline-block;
+    position: relative;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 3rem;
+        font-weight: 500;
+
+        span {
+            font-weight: 700;
+            position: relative;
+            padding: 0 5px;
+        }
+    }
+    p {
+        color: $color-fuentes;
+        margin-bottom: 30px;
+        font-size: 0.8rem;
+    }
+    a {
+        background-color: $color-botones;
+        @include anclas;
+        text-transform: uppercase;
+        padding: 5px 15px;
+        font-weight: 700;
+        &:hover {
+            background-color: $color-botones-secundarios;
+        }
+    }
+}
